@@ -29,7 +29,11 @@ Two files will be generated:
 - Use the stub to call the service
 
 ### Executing
-- Run command: 
-    python3 server.py 
+- Run command:
+
+        python3 server.py 
+    
 - Open other terminal, run command: 
-    python3 client.py 
+
+        python3 client.py 
+    
