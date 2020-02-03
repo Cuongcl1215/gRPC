@@ -20,7 +20,7 @@ DESCRIPTOR = _descriptor.FileDescriptor(
   package='',
   syntax='proto3',
   serialized_options=None,
-  serialized_pb=_b('\n\rmessage.proto\"*\n\x07\x41\x64\x64\x65nds\x12\x0f\n\x07\x61\x64\x64\x65nd1\x18\x01 \x01(\x02\x12\x0e\n\x06\x61\x64\x64\x65n2\x18\x02 \x01(\x02\"\x12\n\x03Sum\x12\x0b\n\x03sum\x18\x01 \x01(\x02\x32*\n\x0c\x43\x61lculateSum\x12\x1a\n\x06my_sum\x12\x08.Addends\x1a\x04.Sum\"\x00\x62\x06proto3')
+  serialized_pb=_b('\n\rmessage.proto\"+\n\x07\x41\x64\x64\x65nds\x12\x0f\n\x07\x61\x64\x64\x65nd1\x18\x01 \x01(\x02\x12\x0f\n\x07\x61\x64\x64\x65nd2\x18\x02 \x01(\x02\"\x12\n\x03Sum\x12\x0b\n\x03sum\x18\x01 \x01(\x02\x32*\n\x0c\x43\x61lculateSum\x12\x1a\n\x06my_sum\x12\x08.Addends\x1a\x04.Sum\"\x00\x62\x06proto3')
 )
 
 
@@ -41,7 +41,7 @@ _ADDENDS = _descriptor.Descriptor(
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR),
     _descriptor.FieldDescriptor(
-      name='adden2', full_name='Addends.adden2', index=1,
+      name='addend2', full_name='Addends.addend2', index=1,
       number=2, type=2, cpp_type=6, label=1,
       has_default_value=False, default_value=float(0),
       message_type=None, enum_type=None, containing_type=None,
@@ -60,7 +60,7 @@ _ADDENDS = _descriptor.Descriptor(
   oneofs=[
   ],
   serialized_start=17,
-  serialized_end=59,
+  serialized_end=60,
 )
 
 
@@ -90,8 +90,8 @@ _SUM = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=61,
-  serialized_end=79,
+  serialized_start=62,
+  serialized_end=80,
 )
 
 DESCRIPTOR.message_types_by_name['Addends'] = _ADDENDS
@@ -120,8 +120,8 @@ _CALCULATESUM = _descriptor.ServiceDescriptor(
   file=DESCRIPTOR,
   index=0,
   serialized_options=None,
-  serialized_start=81,
-  serialized_end=123,
+  serialized_start=82,
+  serialized_end=124,
   methods=[
   _descriptor.MethodDescriptor(
     name='my_sum',

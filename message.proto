@@ -7,7 +7,7 @@ syntax = "proto3";
 message Addends
 {
     float addend1 = 1;
-    float adden2 = 2;
+    float addend2 = 2;
 }
 
 // Define message to hold output
