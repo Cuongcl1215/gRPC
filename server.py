@@ -9,7 +9,7 @@ def my_sum(x,y):
 
 # Create a wrapper class to generate response from input request
 class SumServicer(message_pb2_grpc.CalculateSumServicer):
-    def calculate_sum(self, request):
+    def calculate_sum(self, request, context):
         response = message_pb2.Sum()
         # get the value of the response by calling the defined function
         response.sum = my_sum(request.addend1, request.addend2)
