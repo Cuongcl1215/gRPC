@@ -1,0 +1,25 @@
+// Protobuf version
+syntax = "proto3";
+
+// Messages
+
+// Define message to hold input
+message Addends
+{
+    float addend1 = 1;
+    float adden2 = 2;
+}
+
+// Define message to hold output
+
+message Sum
+{
+    float sum = 1;
+}
+
+// Define the service
+
+service CalculateSum
+{
+    rpc my_sum(Addends) returns (Sum) {}
+}
