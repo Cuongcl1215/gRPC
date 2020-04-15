@@ -12,17 +12,17 @@
 3. Use the proto file to generate gRPC classes from .proto file
 Run the command:
 
-    python3 -m grpc_tools.protoc -I. --python_out=. --grpc_python_out=. message.proto
+        python3 -m grpc_tools.protoc -I. --python_out=. --grpc_python_out=. message.proto
 
 Two files will be generated:
--  "message_pb2.py": contains defined messages
--  "message_pb2_grpc.py": contains server and client classes
+-  `message_pb2.py`: contains defined messages
+-  `message_pb2_grpc.py`: contains server and client classes
  
-4. Create the server: in "server.py"
+4. Create the server: in `server.py`
 - Create a wrapper class to take request and generate response
 - Create a gRPC server and add the service to that server
 
-5. Create the client: in "client.py"
+5. Create the client: in `client.py`
 - Open a gRPC channel
 - Create a stub
 - Create a request message
